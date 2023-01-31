@@ -1,0 +1,172 @@
+header {
+  /* background-color: #31859C; */
+  background-color: rgba(0, 0, 0, 0.805);
+  color: #fcc900;
+}
+.infoGene {
+  display: flex;
+  justify-content: space-between;
+}
+.ligne {
+  width: 100%;
+  height: 5px;
+  background-color: white;
+}
+.objectif {
+  padding-bottom: 20px;
+}
+
+section {
+  /* background-color: #31859C; */
+  background-color: rgba(0, 0, 0, 0.805);
+  color: #fcc900;
+}
+main {
+  display: flex;
+  gap: 75px;
+}
+article > h1 {
+  text-align: center;
+  margin-top: 50px;
+}
+.titre {
+  background-color: white;
+  color: black;
+}
+.qualite {
+  margin-top: 5px;
+}
+
+html {
+  margin: -8px;
+}
+
+.containPerso,
+.objectif,
+.qualite {
+  padding-left: 10px;
+}
+.qualite {
+  padding-right: 10px;
+}
+.infoPerso {
+  padding-right: 20px;
+}
+.photo {
+  border-radius: 50%;
+}
+
+h1,
+h2 {
+  text-decoration: underline;
+}
+.titreCv > h1,
+h2 {
+  text-decoration: none;
+}
+
+@media (max-width: 620px) {
+  main {
+    gap: 30px;
+  }
+}
+@media (max-width: 440px) {
+  .photo {
+    display: none;
+  }
+}
+
+nav {
+  height: 50px;
+  background-color: rgba(0, 0, 0, 0.805);
+  padding-top: 1px;
+  /* #31859C */
+}
+
+.navUl {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navLi {
+  margin-left: 25px;
+}
+.lien {
+  color: #fcc900;
+  text-decoration: none;
+}
+
+.lien:hover {
+  color: #e7fc00;
+  text-decoration: none;
+}
+.containFooter {
+  height: 50px;
+  background-color: rgba(0, 0, 0, 0.805);
+  color: #fcc900;
+  display: flex;
+  justify-content: center;
+  padding-top: 15px;
+}
+@media (max-width: 420px) {
+  .box {
+    background-color: rgba(0, 0, 0, 0.805);
+    position: relative;
+  }
+  .cont-lignes {
+    width: 42px;
+    height: 20px;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    left: 92%;
+    transform: translate(-50%, -50%);
+  }
+
+  .lignes {
+    width: 100%;
+    height: 6px;
+    border-radius: 5px;
+    background-color: #fcc900;
+    position: absolute;
+    transition: all 0.3s ease-in-out;
+  }
+  .lignes:nth-child(1) {
+    top: 0px;
+  }
+  .lignes:nth-child(2) {
+    top: 18px;
+  }
+  .lignes:nth-child(3) {
+    top: 36px;
+  }
+  .btn1.active .lignes:nth-child(1) {
+    top: 18px;
+    transform: rotate(135deg);
+  }
+
+  .btn1.active .lignes:nth-child(2) {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  .btn1.active .lignes:nth-child(3) {
+    top: 18px;
+    transform: rotate(-135deg);
+  }
+
+  nav.active {
+    height: 140px;
+  }
+
+  .smallScreen {
+    display: none;
+  }
+  .navUl {
+    display: block;
+    text-align: center;
+  }
+  h1{
+    font-size: 1.8em;
+  }
+}
